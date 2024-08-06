@@ -1,3 +1,28 @@
+@font-face {
+    font-family: "Site Wordmark Font";
+    src: url("https://h2-wiki-1254268741.cos.ap-shanghai.myqcloud.com/font/Site_Wordmark_Font.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("https://h2-wiki-1254268741.cos.ap-shanghai.myqcloud.com/font/JetBrains_Mono.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "MiSans Latin";
+    src: url("https://h2-wiki-1254268741.cos.ap-shanghai.myqcloud.com/font/MiSans_Latin.woff2") format('woff2');
+}
+
+@font-face {
+	font-family: "Inter";
+	src: url("https://h2-wiki-1254268741.cos.ap-shanghai.myqcloud.com/font/Inter.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url("https://h2-wiki-1254268741.cos.ap-shanghai.myqcloud.com/font/Oswald_Regular.woff2") format('woff2');
+}
+
 :root {
     --cover-font-family: "Inter", "MiSans Latin", "Helvetica Neue", "Helvetica", "Roboto", "BlinkMacSystemFont", "MiSans", "HarmonyOS Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
     --color-primary-override__h: 200;
@@ -40,6 +65,7 @@ body, .v-application, .v-application .body-1, .v-application .caption {
 pre, code {
     color: hsl(var(--color-primary-override__h), 75%, 26%) !important;
     background-color: var(--color-surface-1) !important;
+    font-family: "JetBrains Mono", monospace !important;
     padding: 0px 4px !important;
 }
 
@@ -52,6 +78,7 @@ pre, code {
 }
 
 .v-toolbar__title {
+    font-family: "Site Wordmark Font";
     color: var(--color-text-override--emphasized);
     user-select: none;
     -webkit-user-select: none;
