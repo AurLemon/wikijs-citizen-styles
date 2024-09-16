@@ -69,6 +69,21 @@ pre, code {
     padding: 0px 4px !important;
 }
 
+.v-main .contents .prismjs {
+    padding: 1rem 1rem 1rem 3rem !important;
+}
+
+.v-application code {
+    padding: unset !important;
+    text-shadow: none !important;
+}
+
+div.code-toolbar > .toolbar button {
+    background: transparent !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
 .contents hr {
     background-color: var(--color-surface-2)!important;
 }
