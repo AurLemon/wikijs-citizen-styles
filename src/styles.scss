@@ -145,6 +145,14 @@ div.code-toolbar > .toolbar button {
     opacity: 0.5;
 }
 
+.token.builtin, .token.constant, .token.keyword, .token.property, .token.selector, .token.symbol {
+    color: #bca700;
+}
+
+code[class*=language-]::selection, code[class*=language-] ::selection, pre[class*=language-]::selection, pre[class*=language-] ::selection {
+    background: hsla(var(--color-primary-override__h), 5%, 54%, 22%);
+}
+
 @media screen and (max-width: 960px) {
     .v-toolbar__content button.v-btn.v-btn--icon.v-size--default[aria-label="页面操作"], .v-toolbar__content button.v-btn.v-btn--icon.v-size--default[aria-label="页面操作"] ~ .theme--dark.v-divider, .v-toolbar__content button.v-btn.v-btn--icon.v-size--default[aria-label="创建新页面"], .v-toolbar__content button.v-btn.v-btn--icon.v-size--default[aria-label="创建新页面"] ~ .theme--dark.v-divider {
         display: none;
