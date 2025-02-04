@@ -52,6 +52,10 @@ pre, code {
     text-shadow: none !important;
 }
 
+.v-sheet.v-card:not(.v-sheet--outlined) {
+    box-shadow: 0 0 24px var(--color-surface-2);
+}
+
 div.code-toolbar > .toolbar button {
     background: transparent !important;
     border-radius: 0 !important;
