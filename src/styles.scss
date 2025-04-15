@@ -214,6 +214,10 @@ body,
     border-bottom: 1px solid;
   }
 
+  .v-btn:before {
+    background-color: var(--color-primary-override) !important;
+  }
+
   .v-application .v-footer .caption {
     text-align: center;
   }
@@ -363,7 +367,11 @@ body,
   }
 
   .v-main__wrap {
-    background-color: var(--color-surface-0) !important;
+    background-color: var(--color-surface-2);
+  }
+
+  .v-toolbar__content .theme--dark.v-divider {
+    border-color: transparent !important;
   }
 
   .theme--dark .page-header-section .page-edit-shortcuts .v-btn {
@@ -380,5 +388,9 @@ body,
   .v-sheet.v-card:not(.v-sheet--outlined) {
     box-shadow: none;
     border: 1px solid var(--color-surface-3);
+  }
+
+  .v-btn:before, .v-list-item--link:before {
+    background-color: #fff !important;
   }
 }
