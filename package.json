@@ -1,6 +1,6 @@
 {
   "name": "wikijs-citizen-styles",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "[Citizen](https://github.com/StarCitizenTools/mediawiki-skins-Citizen/)（一个 MediaWiki 皮肤） 风格的 Wiki.js 覆盖样式表。",
   "main": "index.js",
   "scripts": {
