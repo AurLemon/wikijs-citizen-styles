@@ -1,5 +1,7 @@
 # wikijs-citizen-styles
 
+[English](README_EN.md)
+
 ![图片1.png](https://s2.loli.net/2025/04/15/U19BySrJWaEFkzY.png)
 [Citizen](https://github.com/StarCitizenTools/mediawiki-skins-Citizen/)（一个 MediaWiki 皮肤） 风格的 Wiki.js 覆盖样式表。
 
@@ -11,7 +13,7 @@
 
 1. 打开 Wiki.js 的后台，点击左侧的“主题”菜单。
 
-2. 打开下载下来的`styles.css`文件，（**不要**放在“CSS 覆盖”中！）在“正文HTML注入”中写入一对 HTML 标签`<style type="text/css"></style>`。
+2. 打开下载下来的`styles.css`文件，（**不要**放在“CSS 覆盖”中，优先级不够）在“正文HTML注入”中写入一对 HTML 标签`<style type="text/css"></style>`。
 
 3. 将下载下来的`styles.css`内的所有内容复制到`style`标签之中。也就是`<style type="text/css">...CSS内容放在这里面...</style>`之间。
 
@@ -23,11 +25,13 @@
 
 ## FAQ
 
+**由于 Wiki.js 的注入限制，管理界面、登录界面不会应用这份注入样式。**
+
 如果想修改主题色，可修改项目文件中`:root`选择器下的`--color-primary-override__h: 200; --color-primary-override__s: 55%; -color-primary-override__l: 48%;`。主题色使用的是 HSL 颜色系统，这三个 CSS 变量分别是主题色的色相、饱和度、亮度。
 
 如果还想修改其他颜色，对`:root`选择器下的其它 CSS 变量操作即可。修改完后编译，再参照“用法”的表述应用即可。
 
-如果想自定义字体，建议单独把字体配置放在“CSS 注入”中。示例如下：
+如果想自定义字体，建议单独把字体配置放在“CSS 注入”中。直接覆盖 CSS 变量`--cover-font-family`即可，但需要最高优先级。示例如下：
 
 ```css
 @font-face {
@@ -36,7 +40,7 @@
 }
 
 :root {
-	--cover-font-family: Rubik, MiSans, serif !important
+	--cover-font-family: Rubik, sans-serif !important
 }
 ```
 
