@@ -1,4 +1,5 @@
 .git
+.playwright-mcp
 node_modules
 coverage
 dist

@@ -1,9 +1,6 @@
 /* CSS 变量 */
 :root {
-	--cover-font-family:
-		system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-		'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB',
-		'Microsoft YaHei', '微软雅黑', sans-serif; // 需要修改字体的自行调整，或者自行覆盖
+	--cover-font-family: system-ui, sans-serif;
 	--color-primary-override__h: 200;
 	--color-primary-override__s: 55%;
 	--color-primary-override__l: 48%;
@@ -293,14 +290,18 @@ html:has(#app.theme--dark) {
 
 	@media screen and (max-width: 960px) {
 		.v-toolbar__content
-			button.v-btn.v-btn--icon.v-size--default[aria-label='页面操作'],
+			button.v-btn.v-btn--icon.v-size--default:has(
+				.mdi-file-document-edit-outline
+			),
 		.v-toolbar__content
-			button.v-btn.v-btn--icon.v-size--default[aria-label='页面操作']
+			button.v-btn.v-btn--icon.v-size--default:has(
+				.mdi-file-document-edit-outline
+			)
 			~ .theme--dark.v-divider,
 		.v-toolbar__content
-			button.v-btn.v-btn--icon.v-size--default[aria-label='创建新页面'],
+			button.v-btn.v-btn--icon.v-size--default:has(.mdi-text-box-plus-outline),
 		.v-toolbar__content
-			button.v-btn.v-btn--icon.v-size--default[aria-label='创建新页面']
+			button.v-btn.v-btn--icon.v-size--default:has(.mdi-text-box-plus-outline)
 			~ .theme--dark.v-divider {
 			display: none;
 		}
