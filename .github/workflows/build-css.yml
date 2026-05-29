@@ -43,5 +43,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: wikijs-citizen-styles
-          path: dist/styles.css
+          path: dist/*.css
           if-no-files-found: error
