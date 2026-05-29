@@ -1,18 +1,15 @@
 {
 	"name": "wikijs-citizen-styles",
 	"version": "1.0.5",
-	"description": "[Citizen](https://github.com/StarCitizenTools/mediawiki-skins-Citizen/)（一个 MediaWiki 皮肤） 风格的 Wiki.js 覆盖样式表。",
-	"main": "index.js",
+	"description": "A pure-white themed custom override CSS for Wiki.js.",
 	"packageManager": "pnpm@10.14.0",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
 		"format": "prettier --write .",
 		"lint": "eslint .",
 		"build-css": "sass src/styles.scss dist/styles.css --no-source-map --style=compressed && node -e \"const fs=require('node:fs');const file='dist/styles.css';const css=fs.readFileSync(file,'utf8').replace(/^@charset \\\"UTF-8\\\";/,'');fs.writeFileSync(file,'@charset \\\"UTF-8\\\";'+css);\""
 	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
+	"author": "AurLemon",
+	"license": "MIT",
 	"devDependencies": {
 		"eslint": "10.1.0",
 		"prettier": "^3.8.1",
