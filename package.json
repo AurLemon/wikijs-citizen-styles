@@ -1,19 +1,21 @@
 {
-  "name": "wikijs-citizen-styles",
-  "version": "1.0.4",
-  "description": "[Citizen](https://github.com/StarCitizenTools/mediawiki-skins-Citizen/)（一个 MediaWiki 皮肤） 风格的 Wiki.js 覆盖样式表。",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "sass src/styles.scss dist/styles.css --no-source-map && postcss dist/styles.css --use cssnano --no-map --replace "
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "cssnano": "^7.0.4",
-    "postcss-cli": "^11.0.0",
-    "prettier": "^3.5.3",
-    "sass": "^1.77.8"
-  }
+	"name": "wikijs-citizen-styles",
+	"version": "1.0.4",
+	"description": "[Citizen](https://github.com/StarCitizenTools/mediawiki-skins-Citizen/)（一个 MediaWiki 皮肤） 风格的 Wiki.js 覆盖样式表。",
+	"main": "index.js",
+	"packageManager": "pnpm@10.14.0",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"format": "prettier --write .",
+		"lint": "eslint .",
+		"build-css": "sass src/styles.scss dist/styles.css --no-source-map --style=compressed"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"eslint": "10.1.0",
+		"prettier": "^3.8.1",
+		"sass": "^1.77.8"
+	}
 }
