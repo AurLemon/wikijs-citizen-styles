@@ -1,3 +1,5 @@
+
+
 # wikijs-citizen-styles
 
 [English](README_EN.md)
@@ -27,7 +29,7 @@
 
 **由于 Wiki.js 的注入限制，管理界面、登录界面不会应用这份注入样式。**
 
-如果想修改主题色，可修改项目文件中`:root`选择器下的`--color-primary-override__h: 200; --color-primary-override__s: 55%; -color-primary-override__l: 48%;`。主题色使用的是 HSL 颜色系统，这三个 CSS 变量分别是主题色的色相、饱和度、亮度。
+如果想修改主题色，可修改项目文件中`:root`选择器下的`--color-primary-override__h: 200; --color-primary-override__s: 55%; --color-primary-override__l: 48%;`。主题色使用的是 HSL 颜色系统，这三个 CSS 变量分别是主题色的色相、饱和度、亮度。
 
 如果还想修改其他颜色，对`:root`选择器下的其它 CSS 变量操作即可。修改完后编译，再参照“用法”的表述应用即可。
 
